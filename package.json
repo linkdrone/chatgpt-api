@@ -40,6 +40,7 @@
     "@dqbd/tiktoken": "^0.4.0",
     "cac": "^6.7.14",
     "conf": "^11.0.1",
+    "enquirer": "^2.3.6",
     "eventsource-parser": "^0.0.5",
     "keyv": "^4.5.2",
     "p-timeout": "^6.1.1",
@@ -85,5 +86,8 @@
     "ai",
     "ml",
     "bot"
-  ]
+  ],
+  "volta": {
+    "node": "18.14.2"
+  }
 }
