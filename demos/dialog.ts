@@ -39,12 +39,12 @@ async function main() {
     }
 
     try {
-      const res = await oraPromise(
-        api.sendMessage(question, { parentMessageId }),
-        {
-          text: question
+      const res = await api.sendMessage(question, {
+        parentMessageId,
+        onProgress: (partialResponse) => {
+          process.stdout.write(partialResponse.delta)
         }
-      )
+      })
       parentMessageId = res.id
 
       console.log(res.text)
