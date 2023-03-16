@@ -46,8 +46,6 @@ async function main() {
         }
       })
       parentMessageId = res.id
-
-      console.log(res.text)
     } catch (e) {
       console.error('Failed:' + e.message)
     }
