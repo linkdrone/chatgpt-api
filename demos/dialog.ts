@@ -46,6 +46,7 @@ async function main() {
         }
       })
       parentMessageId = res.id
+      process.stdout.write('\r\n')
     } catch (e) {
       console.error('Failed:' + e.message)
     }
