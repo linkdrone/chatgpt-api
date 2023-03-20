@@ -42,7 +42,7 @@ async function main() {
       const res = await api.sendMessage(question, {
         parentMessageId,
         onProgress: (partialResponse) => {
-          process.stdout.write(partialResponse.delta)
+          process.stdout.write(partialResponse.delta || '')
         }
       })
       parentMessageId = res.id
